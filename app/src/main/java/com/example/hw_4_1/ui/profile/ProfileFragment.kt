@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.hw_4_1.R
 import com.example.hw_4_1.databinding.FragmentProfileBinding
-import com.example.hw_4_1.ui.data.Prefs
+import com.example.hw_4_1.data.Prefs
 
 class ProfileFragment : Fragment() {
 

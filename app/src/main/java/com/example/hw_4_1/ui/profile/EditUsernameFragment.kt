@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.hw_4_1.R
 import com.example.hw_4_1.databinding.FragmentEditUsernameBinding
-import com.example.hw_4_1.ui.data.Prefs
+import com.example.hw_4_1.data.Prefs
 
 class EditUsernameFragment : Fragment() {
 
