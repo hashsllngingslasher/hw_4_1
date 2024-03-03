@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="300dp"
-        android:hint="@string/your_username"
+        android:hint="@string/hint_your_username"
         android:textSize="20sp" />
 
     <Button
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/save"
+        android:text="@string/btn_save"
         android:layout_marginTop="20dp"/>
 
 </LinearLayout>

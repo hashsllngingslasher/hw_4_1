@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
-        android:hint="@string/your_username"
+        android:hint="@string/hint_your_username"
         android:textSize="24sp"
  />
 

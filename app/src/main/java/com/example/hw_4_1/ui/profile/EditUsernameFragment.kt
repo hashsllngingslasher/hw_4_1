@@ -6,9 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.hw_4_1.R
 import com.example.hw_4_1.databinding.FragmentEditUsernameBinding
-import com.example.hw_4_1.data.Prefs
+import com.example.hw_4_1.prefs.Prefs
 
 class EditUsernameFragment : Fragment() {
 

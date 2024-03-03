@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.hw_4_1.R
 import com.example.hw_4_1.databinding.FragmentProfileBinding
-import com.example.hw_4_1.data.Prefs
+import com.example.hw_4_1.prefs.Prefs
 
 class ProfileFragment : Fragment() {
 
@@ -18,6 +18,7 @@ class ProfileFragment : Fragment() {
     private val prefs: Prefs by lazy {
         Prefs(requireContext())
     }
+
     private val galleryLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) {
         val galleryUri = it
         try {
@@ -41,8 +42,12 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        prefs.getImage()?.let { url -> Glide.with(binding.imgProfile).load(url).into(binding.imgProfile) }
-        prefs.getName()?.let { binding.tvUsername.text = it }
+        prefs.getImage()?.let { url ->
+            Glide.with(binding.imgProfile).load(url).into(binding.imgProfile)
+        }
+        prefs.getName()?.let {
+            binding.tvUsername.text = it
+        }
 
         binding.btnEdit.setOnClickListener {
             findNavController().navigate(R.id.editUsernameFragment)

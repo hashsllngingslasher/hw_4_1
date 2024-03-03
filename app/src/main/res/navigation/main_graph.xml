@@ -25,4 +25,18 @@
         android:name="com.example.hw_4_1.ui.profile.EditUsernameFragment"
         android:label="Edit info"
         tools:layout="@layout/fragment_edit_username" />
+    <fragment
+        android:id="@+id/taskCreateFragment"
+        android:name="com.example.hw_4_1.ui.create.TaskCreateFragment"
+        android:label="Create Task"
+        tools:layout="@layout/fragment_task_create" />
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.hw_4_1.ui.onboarding.OnboardingFragment"
+        android:label="Onboarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>
